@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+body {
+    background-color: SlateBlue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: 'Comfortaa';
+    font-size: 20px;
+}

@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; URL=/Pages/Home/">
+<meta name="keywords" content="automatic redirection">
+  <style>
+    {background-color:#4286f4;}
+      .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        text-align: center;
+      }
+      
+      .flex-container > * {
+        padding: 10px;
+        -webkit-flex: 1 100%;
+        flex: 1 100%;
+      }
+      
+      .article {
+        text-align: center;
+        color:#47494c;
+      }
+      
+      header {background: #47494c;color:white;}
+      footer {background: #4286f4;color:#47494c;}
+      
+      .nav {background:white;}
+
+      .nav ul {
+        list-style-type: none;
+        padding: 10;
+        background:#4286f4;
+        color:#47494c;
+      }
+      
+      .nav ul a {
+        text-decoration: none;
+      }
+
+      @media all and (min-width: 768px) {
+        .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+        .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+        footer {-webkit-order:3;order:3;}
+      }
+      
+      /* Animation */
+      
+      @keyframes You{
+          from {
+            opacity: 0;
+            -webkit-transform: scale(0.1) rotate(30deg);
+            transform: scale(0.1) rotate(30deg);
+            -webkit-transform-origin: center bottom;
+             transform-origin: center bottom;
+          }
+
+        10% {
+          -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+        }
+
+        30% {
+          -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+        }
+
+        to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+      }
+      
+      @keyframes You_test {
+        0% {}
+      }
+      
+      /* animated */
+      
+      you_text{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: YOU.png;
+        animation-name: You_test;
+        Animation-duration: 5s;
+        Animation-delay: 0s;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="flex-container">
+      <header>
+        <h1>
+        <img src="DSW.png"><you_text></you_text></h1>
+      </header>
+      <nav class="nav">
+        <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Tweets</a></li>
+        <li><a href="#">Share</a></li>
+        </ul>
+      </nav>
+    
+      <article class="article">
+        Depression needs to stop.<br>
+        But we can only stop it together.<br>
+        In america alone, 40 Million adults 18 or older suffer from Depression.<br>
+        That is roughly 18.1%.<br>
+        <br>
+        Go on twitter and post what you will do to help people with depression with #DepressionEndsWith
+      </article>
+    
+      <footer><h6>Design based on W3schools CSS flex container example<br>&copy; Jack Johannesen 2018-2019</h6></footer>
+    </div>
+  </body>
+
+</html>

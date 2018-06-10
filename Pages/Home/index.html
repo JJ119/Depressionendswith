@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--============================================_Head_=============================================-->
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="/Assets/IcoMoonIcons.css">
+    <title>Depression Ends With...</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--============================================_Style_============================================-->
+<!--===============================================================================================-->
+  <style>
+  * {
+    box-sizing: border-box;
+    background-color:#47494c;
+    color:white;
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
+  /*=====================*/
+  /* Animation Keyframes */
+  /*=====================*/
+  @keyframes in-out{
+    0%{left:10000000px;transform:rotate(0deg);}
+    50% {left:0px;transform:rotate(0deg);transform:scale(2,1);}
+    54% {left:100px;transform:rotate(5deg)transform:scale(1,1);}
+    58% {left:0px;transform:rotate(0deg);}
+    61%{left:75px;transform:rotate(-4deg);}
+    64%{left:0px;transform:rotate(0deg);}
+    66%{left:25px;transform:rotate(3deg);}
+    68%{left:0px;transform:rotate(0deg);}
+    80%{left:0px;transform: rotate(0deg);}
+    95% {left:-10px;transform: rotate(-5deg);transform:scale(1,1)}
+    96%{transform: rotate(50deg);}
+    100% {left:2000px;width:100px;}
+  }
+  @keyframes bob{
+    0%{left 10px;}
+    50%{left:15px;background-color:#5693f5;}
+    100%{left:10px;}
+  }
+  @keyframes YOU_text{
+    0%{opacity:1;}
+    32%{opacity:1;}
+    33%{opacity:0;}
+    99%{opacity:0;}
+    100%{opacity:1}
+  }
+  @keyframes ME_text{
+    0%{opacity:0;}
+    32%{opacity:0;}
+    33%{opacity:1;}
+    65%{opacity:1;}
+    66%{opacity:0;}
+    99%{opacity:0;}
+    100%{opacity:0}
+  }
+  @keyframes Everyone_text{
+    0%{opacity:0;}
+    65%{opacity:0;}
+    66%{opacity:1;}
+    99%{opacity:1;}
+    100%{opacity:0}
+  }
+  @keyframes shadow_logo{
+    0%{transform:scale(0.1,0.1);}
+    20%{transform:scale(0.1,0.1);}
+    53% {transform:scale(1,1);}
+    54% {transform:scale(0.7,0.7);}
+    58% {transform:scale(1,1);}
+    61%{transform:scale(0.8,0.8);}
+    64%{transform:scale(1,1);}
+    66%{transform:scale(0.9,0.9);}
+    68%{transform:scale(1,1);}
+    80%{transform:scale(1,1);}
+    95% {transform:scale(1,1);}
+    100%{transform:scale(0.1,0.1);}
+  }
+  @keyframes floa{
+    0%{top:10px;}
+    100%{top:-10px;}
+  }
+  @keyframes shadowfloa{
+    0%{transform:scale(3,0.5);}
+    100%{transform:scale(1,0.25);}
+  }
+  @keyframes slide-right{
+    0%{left:-100px;opacity:0;}
+    50%{left:10px;opacity:0.5;}
+    100%{left:0px;opacity:1;}
+  }
+  @keyframes twtr{
+    0%{left:10px;}
+    10%{opacity:1;}
+    79%{left:120px;opacity:0;}
+    80%{left:10px;opacity:0;}
+    85%{left:-20px;opacity:0;}
+    100%{left:10px;opacity:1;}
+  }
+  @keyframes twtrbob{
+    0%{top:-5px;}
+    50%{top:5px;}
+    100%{top:-5px;}
+  }
+  /*=========================================*/
+  /* Keyframes used for removed animations. */
+  /*========================================*/
+  @keyframes na{}
+  /*================*/
+  /* Main CSS code. */
+  /*================*/
+  /*===========================================_Logo_===========================================*/
+  /*=============================================================================================*/
+  .you {
+    width:100px;
+    height:50px;
+    background-color:#4286f4;
+    animation-name: in-out;
+    animation-duration: 5s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    position: relative;
+    color:white;
+    text-align:center;
+    margin-left:525px;
+    margin-top:-95px;
+    z-index:5;
+    overflow:hidden;
+    border-radius: 10px;
+  }
+  .text_U{
+    color:white;
+    position:absolute;
+    text-align:center;
+    animation-name:YOU_text;
+    animation-duration:15s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    background-color:#4286f4;
+    font-size:36px;
+    padding-left:9px;
+  }
+  .text_ME{
+    color:white;
+    position:absolute;
+    text-align:center;
+    animation-name:ME_text;
+    animation-duration:15s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    background-color:#4286f4;
+    font-size:36px;
+    padding-left:20px;
+  }
+  .text_Everyone{
+    color:white;
+    position:absolute;
+    text-align:center;
+    animation-name:Everyone_text;
+    animation-duration:15s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    background-color:#4286f4;
+    font-size:18px;
+    padding-top:12px;
+  }
+  .textSHADOW{
+    margin-left:515px;
+    margin-top:-75px;
+    animation-name:shadow_logo;
+    animation-iteration-count:infinite;
+    position:absolute;
+    animation-delay:0s;
+    animation-duration:5s;
+    z-index:3;
+    opacity:0.75;
+  }
+  .dependwith{
+    animation-name:floa;
+    animation-iteration-count:infinite;
+    position:static;
+    animation-delay:0s;
+    animation-duration:5s;
+    z-index:2;
+    margin-bottom:25px;
+    margin-top:25px;
+  }
+  /*===========================================_Paragraph_===========================================*/
+  /*=================================================================================================*/
+  .p1 {
+    animation-name:slide-right;
+    animation-iteration-count:1;
+    position:relative;
+    animation-delay:0s;
+    animation-duration:4s;
+    z-index:0;
+    padding-bottom:20px;
+  }
+  .p1 p{
+    width:50%;
+    background-color:#4286f4;
+    animation-name:floa;
+    animation-iteration-count:infinite;
+    animation-duration:2s;
+    position:relative;
+    animation-delay:0s;
+    z-index:1px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    color:white;
+    animation-direction:alternate;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px #111;
+  }
+  .p1shadow{
+    z-index:-1;
+    animation-name:shadowfloa;
+    animation-delay:0s;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    margin-left:225px;
+    margin-top:100px;
+    position:fixed;
+  }
+  /*===========================================_Graph_===========================================*/
+  /*=============================================================================================*/
+  .graphcontainer {
+    position:relative;
+    padding-left:60%;
+    margin-top:-10px;
+    top:-200px;
+    z-index:-1;
+    margin-right:500px;
+  }
+  .graphcontainer:hover .pie{
+    position:fixed;
+    transition:1s;
+    opacity:1;
+    transform:rotateY(360deg);
+    transform:scale(-1,-0.5);
+  }
+  .graphcontainer:hover .ppl{
+    position:fixed;
+    transition:1s;
+    opacity:1;
+    transform:rotateY(-360deg);
+    transform:scale(1,1);
+  }
+  .graphcontainer:hover .percent{
+    position:fixed;
+    transition:1s;
+    opacity:1;
+    left:1100px;
+    transform:rotate(0deg);
+    border-radius: 10px;
+  }
+  .graphcontainer .pie{
+    position:fixed;
+    transition:1s;
+    opacity:1;
+    transform:rotateY(0deg);
+    transform:scale(1,1);
+  }
+  .graphcontainer .ppl{
+    position:fixed;
+    transition:1s;
+    opacity:0;
+    transform:rotateY(0deg);
+    transform:scale(-1,0.5);
+  }
+  .graphcontainer .percent{
+    margin-top:60px;
+    width:100px;
+    height:50px;
+    background-color:#4286f4;
+    box-shadow: 10px 10px 0px #111;
+    position:fixed;
+    transition:1s;
+    opacity:0;
+    transform:rotate(360deg);
+    left:1900px;
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  /*===========================================_MAIN_============================================*/
+  /*=============================================================================================*/
+  body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  /*===========================================_Sidenav_===========================================*/
+  /*===============================================================================================*/
+  /*===========================*/
+  /* Style the side navigation */
+  /*===========================*/
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    border:5px solid #111;
+    max-width:14.5%;
+  }
+  /* Side navigation links */
+  .sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+    left:0px;
+  }
+  /* Change color on hover */
+  .sidenav a:hover {
+    background-color: #4286f4;
+    color: white;
+    left:10px;
+    transition:0.5s;
+    animation-name: bob;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-iteration-count: infinite;
+  }
+  /*===================*/
+  /* icons for sidenav */
+  /*===================*/
+  /*home*/
+    .sidenav .home{
+      background-color:transparent;
+      opacity:0;
+      position:relative;
+      left:-20px;
+      transition:0.5s;
+    }
+    .sidenav .home i {
+      background-color:transparent;
+    }
+    .sidenav a:hover .home {
+      background-color:transparent;
+      opacity:1;
+      left:10px;
+      transition:0.5s;
+    }
+  /*twitter*/
+    .sidenav .twitter{
+      left:-20px;
+      position:relative;
+      opacity:0;
+    }
+    .sidenav a:hover .twitter{
+      background-color: transparent;
+      color: white;
+      position:relative;
+      transition:0.5s;
+      animation-name:na;
+      animation-iteration-count:infinite;
+      animation-delay:0s;
+      animation-duration:5s;
+      left:10px;
+      opacity:1;
+    }
+    .sidenav .twitter i{
+      background-color:transparent;
+    }
+    .sidenav a:hover .twitter i{
+      background-color: transparent;
+      color: white;
+      position:relative;
+      transition:0.5s;
+      animation-name:twtrbob;
+      animation-iteration-count:infinite;
+      animation-delay:0s;
+      animation-duration:3s;
+    }
+  /*share*/
+    .sidenav .share{
+      position:relative;
+      left:-20;
+      opacity:0;
+      background-color:transparent;
+      transition:0.5s;
+    }
+    .sidenav .share span{
+      background-color:transparent;
+      position:relative;
+    }
+    .sidenav .share span i{
+      background-color:transparent;
+      position:relative;
+    }
+    .sidenav a:hover .share{
+      left:10px;
+      opacity:1;
+      transition:0.5s;
+    }
+  /*twitr*/
+    .sidenav .share .twtr{
+      opacity:1;
+      left:-20px;
+      transition:0.5s;
+    }
+    .sidenav a:hover .share .twtr{
+      transition:0.5s;
+      left:0px;
+    }
+  /*facebook*/
+    .sidenav .share .fb{
+      opacity:1;
+      left:-40px;
+      transition:0.5s;
+    }
+    .sidenav a:hover .share .fb{
+      transition:0.5s;
+      left:0px;
+    }
+  /*insta*/
+    .sidenav .share .insta{
+      opacity:1;
+      left:-60px;
+      transition:0.5s;
+    }
+    .sidenav a:hover .share .insta{
+      transition:0.5s;
+      left:0px;
+    }
+  /*pin - Scrapped*/
+    .sidenav .share .pin{
+      opacity:1;
+      left:-80px;
+      transition:0.5s;
+    }
+    .sidenav a:hover .share .pin{
+      transition:0.5s;
+      left:0px;
+    }
+  /*g+ - Scrapped*/
+    .sidenav .share .gp{
+      opacity:1;
+      left:-90px;
+      transition:0.5s;
+    }
+    .sidenav a:hover .share .gp{
+      transition:0.5s;
+      left:0px;
+    }
+  /*message*/
+    .sidenav .share .mms{
+      opacity:1;
+      left:-80px;
+      transition:0.5s;
+    }
+    .sidenav a:hover .share .mms{
+      transition:0.5s;
+      left:0px;
+    }
+  /*mail*/
+    .sidenav .share .mail{
+      opacity:1;
+      left:-90px;
+      transition:0.5s;
+    }
+    .sidenav a:hover .share .mail{
+      transition:0.5s;
+      left:0px;
+    }
+  /*end of share*/
+  /*===========================================_Content_===========================================*/
+  /*===============================================================================================*/
+  /* Style the content */
+  .content {
+    margin-left: 200px;
+    padding-left: 20px;
+  }
+  /*===========================================_Footer_===========================================*/
+  /*=============================================================================================*/
+  .footer {
+  z-index:2;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  background-color:#5693f5;
+  border: 5px solid #111;
+}
+  .footer i {
+  background-color:#5693f5;
+}
+  .logo {
+  z-index:5;
+  margin-left:200px;
+  margin-bottom:25px;
+  margin-right:0px;
+  margin-top:0px;
+  position:sticky;
+  overflow-y:hidden;
+  padding-bottom:50px;
+}
+  </style>
+  <link rel="icon" href="/favicon.ico" type="image/ico" sizes="16x16">
+  </head>
+
+<body>
+<div class="sidenav">
+  <a href="/Pages/Home/">Home<span class='home'><i class="icon-home"></i></span></a>
+  <a href="/Pages/Twitter/">Twitter<span class='twitter'><i class="icon-twitter"></i></span></a>
+  <a href="/Pages/Share/">Share
+    <span class='share'>
+      <span class='twtr'>
+        <i class="icon-twitter"></i>
+      </span>
+      <span class='fb'>
+        <i class="icon-facebook2"></i>
+      </span>
+      <span class='insta'>
+        <i class="icon-instagram"></i>
+      </span>
+      <span class='mms'>
+        <i class="icon-bubbles"></i>
+      </span>
+      <span class='mail'>
+        <i class="icon-envelop"></i>
+      </span>
+    </span>
+  </a>
+</div>
+<div class="logo">
+  <h2>
+      
+      <div class="dependwith">
+        <img src='/Assets/TextLogoNEW_3.png'>
+      </div>
+      <div class="you">
+        <div class="text_U">YOU</div>
+        <div class="text_ME">ME</div>
+        <div class="text_Everyone">EVERYONE</div>
+      </div>
+      <div class="textSHADOW">
+        <img src="/Assets/Shadow_side.png">
+      </div>
+  </h2>
+</div>
+<div class="content">
+    <div class='p1'>
+      <p>
+      Depression needs to stop.<br>
+      But we can only stop it together.<br>
+      In america alone, 40 Million adults 18 or older suffer from Depression.<br>
+      That is roughly 18.1%.<br>
+      <br>
+      Go on twitter and post what you will do to help people with depression with #DepressionEndsWith
+      <br>
+      The top posts will be reposted on the official Twitter.
+      </p>
+      <div class="p1shadow">
+        <img src='/Assets/Shadow.png'>
+      </div>
+      <div class="graphcontainer">
+        <span class='pie'>
+          <img src='/Assets/pie.png'>
+        </span>
+        <span class='ppl'>
+          <img src='/Assets/ppl.png'>
+        </span>
+        <span class='percent'>18.5%</span>
+      </div>
+    </div>
+</div>
+<div class="footer">Copyright Jack J. 2018. All Rights Reserved. Icons by Icomoon<i class="icon-IcoMoon"></i>.</div>
+<script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "/Pages/Mobile/";
+}
+//-->
+</script>
+</body>
+</html>
